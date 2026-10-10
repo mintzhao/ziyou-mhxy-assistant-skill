@@ -1,0 +1,17 @@
+{
+  "gemType": "moon",
+  "slot": "头盔",
+  "equipmentLevel": "80",
+  "currentForge": "7",
+  "targetForge": "9",
+  "existingGemTypes": [
+    "moon"
+  ],
+  "effects": [
+    "精致"
+  ],
+  "providedGrades": [
+    "8",
+    "9"
+  ]
+}

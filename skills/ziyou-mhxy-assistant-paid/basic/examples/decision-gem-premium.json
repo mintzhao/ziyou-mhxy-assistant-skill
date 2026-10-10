@@ -1,0 +1,64 @@
+{
+  "context": {
+    "server": "测试区",
+    "currency": "两",
+    "as_of": "2026-10-06",
+    "max_age_days": 7
+  },
+  "category": "equipment",
+  "pairs": [
+    {
+      "id": "synthetic-pair",
+      "lower": {
+        "features": {
+          "ruleset": "电脑版时间服",
+          "level": 100,
+          "slot": "鞋子",
+          "base_stats": "同样的完整白字属性",
+          "special_effects": "无",
+          "set": "同一套装",
+          "repair_failures": "0",
+          "forge": 8,
+          "gem_types": "黑宝石"
+        },
+        "quote": {
+          "amount": "100",
+          "currency": "两",
+          "server": "测试区",
+          "observed_on": "2026-10-06",
+          "source": "synthetic user quote for test",
+          "kind": "asking"
+        }
+      },
+      "higher": {
+        "features": {
+          "ruleset": "电脑版时间服",
+          "level": 100,
+          "slot": "鞋子",
+          "base_stats": "同样的完整白字属性",
+          "special_effects": "无",
+          "set": "同一套装",
+          "repair_failures": "0",
+          "forge": 10,
+          "gem_types": "黑宝石"
+        },
+        "quote": {
+          "amount": "140",
+          "currency": "两",
+          "server": "测试区",
+          "observed_on": "2026-10-06",
+          "source": "synthetic user quote for test",
+          "kind": "asking"
+        }
+      },
+      "incremental_material_cost": {
+        "amount": "70",
+        "currency": "两",
+        "server": "测试区",
+        "observed_on": "2026-10-06",
+        "source": "synthetic user quote for test",
+        "kind": "user_quote"
+      }
+    }
+  ]
+}

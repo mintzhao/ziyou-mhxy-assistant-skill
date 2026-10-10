@@ -1,0 +1,39 @@
+{
+  "schema": "mhxy-dossier/v1",
+  "id": "synthetic-scene-leveling",
+  "revision": 1,
+  "parent_sha256": null,
+  "title": "合成示例：宝宝35到150的场景范围核对",
+  "context": {
+    "server": "纯合成区",
+    "currency": "两",
+    "as_of": "2026-10-07",
+    "ruleset": "pc_time"
+  },
+  "sources": [
+    {
+      "id": "example",
+      "origin": "user",
+      "text": "纯合成演示：宝宝当前35级，目标150，不考虑月华露；人物等级和带练费用未知，不是玩家当前实况"
+    }
+  ],
+  "facts": [],
+  "snapshot": {
+    "pet": {
+      "ruleset": "pc_time",
+      "current_pet_level": 35,
+      "target_pet_level": 150,
+      "scene": "蓬莱仙岛",
+      "exclude_yuehua": true
+    }
+  },
+  "steps": [
+    {
+      "id": "scene",
+      "kind": "mechanics.scene_leveling",
+      "input": {
+        "$ref": "snapshot:/pet"
+      }
+    }
+  ]
+}

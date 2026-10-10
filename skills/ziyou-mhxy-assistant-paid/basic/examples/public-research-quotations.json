@@ -1,0 +1,67 @@
+{
+  "context": {
+    "server": "测试区",
+    "currency": "两",
+    "as_of": "2026-10-07"
+  },
+  "category": "equipment",
+  "subject": {
+    "ruleset": "电脑版时间服",
+    "level": 80,
+    "slot": "武器",
+    "base_stats": "伤害300",
+    "special_effects": "无",
+    "set": "无",
+    "repair_failures": 0,
+    "gem_types": "太阳石",
+    "forge": 5
+  },
+  "sources": [
+    {
+      "id": "s",
+      "origin": "user_text",
+      "status": "readable",
+      "read_on": "2026-10-07",
+      "text": "amount：1.25\nunit：万两\nserver：测试区\nobserved_on：2026-10-06\nkind：挂牌\nfeature:ruleset：电脑版时间服\nfeature:level：80\nfeature:slot：武器\nfeature:base_stats：伤害300\nfeature:special_effects：无\nfeature:set：无\nfeature:repair_failures：0\nfeature:gem_types：太阳石\nfeature:forge：5"
+    }
+  ],
+  "observations": [
+    {
+      "id": "a",
+      "source_id": "s",
+      "item_key": "测试商品A",
+      "features": {
+        "ruleset": "电脑版时间服",
+        "level": 80,
+        "slot": "武器",
+        "base_stats": "伤害300",
+        "special_effects": "无",
+        "set": "无",
+        "repair_failures": 0,
+        "gem_types": "太阳石",
+        "forge": 5
+      },
+      "amount": "1.25",
+      "unit": "万两",
+      "server": "测试区",
+      "observed_on": "2026-10-06",
+      "kind": "asking",
+      "evidence": {
+        "amount": "amount：1.25",
+        "unit": "unit：万两",
+        "server": "server：测试区",
+        "observed_on": "observed_on：2026-10-06",
+        "kind": "kind：挂牌",
+        "feature:ruleset": "feature:ruleset：电脑版时间服",
+        "feature:level": "feature:level：80",
+        "feature:slot": "feature:slot：武器",
+        "feature:base_stats": "feature:base_stats：伤害300",
+        "feature:special_effects": "feature:special_effects：无",
+        "feature:set": "feature:set：无",
+        "feature:repair_failures": "feature:repair_failures：0",
+        "feature:gem_types": "feature:gem_types：太阳石",
+        "feature:forge": "feature:forge：5"
+      }
+    }
+  ]
+}

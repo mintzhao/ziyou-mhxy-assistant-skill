@@ -1,0 +1,241 @@
+{
+  "context": {
+    "as_of": "2026-10-06",
+    "currency": "两",
+    "max_age_days": 7,
+    "ruleset": "pc_time",
+    "server": "档案合成区"
+  },
+  "facts": [
+    {
+      "assumption": "纯原创合成测试，不是用户账号事实或真实区价",
+      "evidence": [
+        {
+          "excerpt": "鞋当前8段",
+          "source_id": "synthetic"
+        }
+      ],
+      "id": "forge",
+      "label": "当前锻数",
+      "scope": "scenario",
+      "status": "conditional",
+      "unit": "锻",
+      "value": 8
+    },
+    {
+      "assumption": "纯原创合成测试，不是用户账号事实或真实区价",
+      "evidence": [
+        {
+          "excerpt": "库存1颗9级黑宝石",
+          "source_id": "synthetic"
+        }
+      ],
+      "id": "stock9",
+      "label": "库存9级黑宝石",
+      "scope": "scenario",
+      "status": "conditional",
+      "unit": "颗",
+      "value": 1
+    },
+    {
+      "assumption": "纯原创合成测试，不是用户账号事实或真实区价",
+      "evidence": [
+        {
+          "excerpt": "10级单价改为103两",
+          "source_id": "synthetic_v2"
+        }
+      ],
+      "id": "quote10",
+      "label": "10级采购报价",
+      "scope": "scenario",
+      "status": "conditional",
+      "unit": "两",
+      "value": "103"
+    },
+    {
+      "assumption": "纯原创合成测试，不是用户账号事实或真实区价",
+      "evidence": [
+        {
+          "excerpt": "9级单价31两",
+          "source_id": "synthetic"
+        }
+      ],
+      "id": "quote9",
+      "label": "9级采购报价",
+      "scope": "scenario",
+      "status": "conditional",
+      "unit": "两",
+      "value": "31"
+    },
+    {
+      "assumption": "纯原创合成测试，不是用户账号事实或真实区价",
+      "evidence": [
+        {
+          "excerpt": "库存机会价值27两",
+          "source_id": "synthetic"
+        }
+      ],
+      "id": "stock_value",
+      "label": "stock_value",
+      "scope": "scenario",
+      "status": "conditional",
+      "unit": "两",
+      "value": "27"
+    },
+    {
+      "assumption": "纯原创合成测试，不是用户账号事实或真实区价",
+      "evidence": [
+        {
+          "excerpt": "预算140两",
+          "source_id": "synthetic"
+        }
+      ],
+      "id": "cash",
+      "label": "cash",
+      "scope": "scenario",
+      "status": "conditional",
+      "unit": "两",
+      "value": "140"
+    }
+  ],
+  "id": "synthetic_boots",
+  "parent_sha256": "a605c1f898505b3a6a8d10040d944bc4b8cf2c99deaf68b70382aeaf620faf09",
+  "revision": 2,
+  "schema": "mhxy-dossier/v1",
+  "snapshot": {
+    "already_met": [],
+    "available_resources": {
+      "black9": {
+        "$fact": "stock9"
+      }
+    },
+    "budget": {
+      "$fact": "cash"
+    },
+    "gem": {
+      "equipment": {
+        "currentForge": {
+          "$fact": "forge",
+          "unit": "锻"
+        },
+        "effects": [],
+        "equipmentLevel": 100,
+        "existingGemTypes": [
+          "black"
+        ],
+        "gemType": "black",
+        "slot": "鞋子",
+        "targetForge": 10
+      },
+      "fees": [],
+      "grade_quotes": {
+        "10": {
+          "amount": {
+            "$fact": "quote10"
+          },
+          "currency": "两",
+          "kind": "user_quote",
+          "observed_on": "2026-10-06",
+          "server": "档案合成区",
+          "source": "原创合成报价，非真实区价"
+        },
+        "9": {
+          "amount": {
+            "$fact": "quote9"
+          },
+          "currency": "两",
+          "kind": "user_quote",
+          "observed_on": "2026-10-06",
+          "server": "档案合成区",
+          "source": "原创合成报价，非真实区价"
+        }
+      },
+      "owned_stones": {
+        "9": {
+          "opportunity_quote": {
+            "amount": {
+              "$fact": "stock_value"
+            },
+            "currency": "两",
+            "kind": "user_quote",
+            "observed_on": "2026-10-06",
+            "server": "档案合成区",
+            "source": "原创合成报价，非真实区价"
+          },
+          "quantity": {
+            "$fact": "stock9"
+          }
+        }
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "synthetic",
+      "origin": "demonstration",
+      "text": "以下数值只是原创合成回归样例。鞋当前8段、目标10段、库存1颗9级黑宝石；10级单价64两、9级单价31两、库存机会价值27两、预算140两；保留20两。"
+    },
+    {
+      "id": "synthetic_v2",
+      "origin": "demonstration",
+      "text": "第二轮合成情景：10级单价改为103两；其他状态不变。"
+    }
+  ],
+  "steps": [
+    {
+      "id": "whole",
+      "input": {
+        "already_met": {
+          "$ref": "snapshot:/already_met"
+        },
+        "available_resources": {
+          "$ref": "snapshot:/available_resources"
+        },
+        "budget": {
+          "$ref": "snapshot:/budget",
+          "unit": "两"
+        },
+        "goals": [
+          {
+            "basis": "合成目标，非战斗阈值",
+            "id": "boots10",
+            "target": "指定鞋10段"
+          }
+        ],
+        "options": [
+          {
+            "$ref": "step:gem:/option"
+          }
+        ],
+        "reserve": "20",
+        "title": "合成鞋子目标总预算"
+      },
+      "kind": "portfolio"
+    },
+    {
+      "id": "gem",
+      "input": {
+        "calculation": {
+          "$ref": "snapshot:/gem"
+        },
+        "project": {
+          "conflicts": [],
+          "effect_basis": "仅代表合成的同一物品锻数目标",
+          "eligibility": "confirmed",
+          "goals": [
+            "boots10"
+          ],
+          "id": "upgrade",
+          "label": "把指定鞋从现段升到10段",
+          "requires": [],
+          "system": "equipment"
+        },
+        "stock_resources": {
+          "9": "black9"
+        }
+      },
+      "kind": "project.gem_upgrade"
+    }
+  ],
+  "title": "原创合成：同一份鞋子升级档案三次修订"
+}

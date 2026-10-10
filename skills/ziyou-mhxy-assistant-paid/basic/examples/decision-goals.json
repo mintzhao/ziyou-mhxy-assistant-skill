@@ -1,0 +1,27 @@
+{
+  "profile": {
+    "school": "狮驼岭",
+    "level": 129,
+    "activity": "用户自己选择的活动",
+    "pain": "用户自己反映出手顺序",
+    "budget": "用户自定"
+  },
+  "measurement_state": "用户确认同一状态",
+  "current": {
+    "speed": "540"
+  },
+  "targets": {
+    "speed": {
+      "value": "600",
+      "direction": "at_least",
+      "basis": "纯合成演示目标，非游戏推荐"
+    }
+  },
+  "prerequisites": [
+    {
+      "label": "候选装备使用资格",
+      "status": "unknown",
+      "source": "待游戏内核对"
+    }
+  ]
+}

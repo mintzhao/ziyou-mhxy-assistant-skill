@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0",
+  "checked_at_utc": "2026-10-06T16:14:07Z",
+  "scope": "MHXY PC time-server",
+  "rules": [
+    {
+      "id": "beast_ordinary_exchange",
+      "status": "primary_explicit_updated",
+      "quantity": "dynamic",
+      "quantity_determinants": [
+        "beast_type",
+        "exchange_volume",
+        "server_age"
+      ],
+      "npc": "长安城(357,245)袁天罡",
+      "fixed_99_random_generalization": false,
+      "sources": [
+        "https://xyq.163.com/wh/20240701/4907_1164100.html"
+      ]
+    },
+    {
+      "id": "beast_ordinary_appearance",
+      "status": "primary_explicit_superseding",
+      "effective_date": "2026-06-30",
+      "all_ordinary_types_always_appear": true,
+      "supersedes": "2024每日随机10种/定时变化限制",
+      "sources": [
+        "https://xyq.163.com/wh/20260625/4907_1305665.html"
+      ]
+    },
+    {
+      "id": "beast_zodiac_exchange",
+      "status": "primary_current_indexed",
+      "cost": {
+        "神兜兜": 99,
+        "灵兜兜": 1
+      },
+      "outcome": "指定生肖神兽",
+      "sources": [
+        "https://xyq.163.com/chongwu/zhsxq.html?id=12054&type=5",
+        "https://xyq.163.com/introduce/"
+      ]
+    },
+    {
+      "id": "beast_five_element_exchange",
+      "status": "primary_current_indexed",
+      "cost": {
+        "神兜兜": 1299
+      },
+      "sources": [
+        "https://xyq.163.com/chongwu/zhsxq.html?id=12054&type=5",
+        "https://xyq.163.com/introduce/"
+      ]
+    },
+    {
+      "id": "beast_stars_2026",
+      "status": "primary_explicit",
+      "rules": {
+        "star1_requires_second_rebirth": true,
+        "ordinary_requires_designated_learned_skill": true,
+        "five_element_can_star": false,
+        "star2_requires_same_attack_type_two_star1": true,
+        "star3_requires_same_attack_type_two_star2": true,
+        "upgrade_doudou_cost": null,
+        "upgrade_inheritance_choices": [
+          "level_and_stat_allocation",
+          "skills",
+          "inner_pills"
+        ],
+        "first_disposition_selection_free": true,
+        "subsequent_disposition_selection_requires_doudou": true
+      },
+      "sources": [
+        "https://xyq.163.com/2026/sqzlp/"
+      ]
+    },
+    {
+      "id": "bubble_companion_old_route",
+      "status": "primary_explicit_retired",
+      "renamed_to": "★★超级泡泡",
+      "old_acquisition_route_closed_on": "2026-07-28",
+      "replacement": "神兽升星",
+      "sources": [
+        "https://xyq.163.com/wh/20260625/4907_1305665.html",
+        "https://xyq.163.com/wh/20260724/4907_1308997.html"
+      ]
+    },
+    {
+      "id": "beast_skills_general_washing",
+      "status": "unsupported_for_universal_rule",
+      "unknowns": [
+        "initial_skill_count_all_species",
+        "wash_skill_eligibility",
+        "replaceable_skill_slots",
+        "replacement_costs",
+        "rebirth_costs_all_species"
+      ],
+      "safe_action": "require_specific_species_current_skill_evidence; do not invent unified skill washing instructions"
+    },
+    {
+      "id": "beast_buy_vs_exchange",
+      "status": "cost_framework_only",
+      "required_inputs": [
+        "species",
+        "physical_or_magic",
+        "level",
+        "rebirth_count",
+        "stars",
+        "skills",
+        "inner_pills",
+        "npc_current_doudou_quantity",
+        "local_doudou_unit_price",
+        "lingdoudou_incremental_cost_if_used",
+        "comparable_finished_total_price",
+        "cultivation_difference_cost",
+        "currency_conversion_if_needed"
+      ],
+      "market_price_known": false,
+      "cheapest_route": null,
+      "no_external_runtime_api_required": true
+    }
+  ],
+  "current_applicability": {
+    "indexed_current_pet_site": true,
+    "checked_2024_exchange_change_and_2026_superseding_patch": true,
+    "in_game_tested": false,
+    "all_intervening_patch_notes_checked": false
+  }
+}

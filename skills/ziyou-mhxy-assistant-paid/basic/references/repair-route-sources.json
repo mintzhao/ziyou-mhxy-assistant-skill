@@ -1,0 +1,403 @@
+{
+  "schema_version": "1.0",
+  "knowledge_checked_date": "2026-10-07",
+  "scope": "pc_time; Changwan sources are isolated evidence, never applied to pc_time",
+  "sources": [
+    {
+      "id": "H01",
+      "url": "https://xyq.163.com/introduce/jn005.html",
+      "publication_date": "2013-01-05",
+      "effective_test_date": null,
+      "all_server_effective_date": null,
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "47020163b75417f18ca398c5f2ea640e21184b481020126336c1c3e96eb92732"
+    },
+    {
+      "id": "H02",
+      "url": "https://xyq.163.com/introduce/sys/sy001.html",
+      "publication_date": "2016-04-07",
+      "effective_test_date": null,
+      "all_server_effective_date": null,
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "b28e84b65418d8894b752873bece9d7a7b93640ff5effa2c672f6fb87ea390f5"
+    },
+    {
+      "id": "H03",
+      "url": "https://xyq.163.com/2008/11/10/4907_194633.html",
+      "publication_date": "2008-11-10",
+      "effective_test_date": "2008-11-11",
+      "all_server_effective_date": null,
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "047276a945fd5aca4b3b16cdfac42321d6cdad293f5b51ce273790e88e1b2aa8"
+    },
+    {
+      "id": "H04",
+      "url": "https://xyq.163.com/wh/20240401/4907_1146535.html",
+      "publication_date": "2024-04-01",
+      "effective_test_date": "2024-04-02",
+      "all_server_effective_date": "2024-04-09",
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "a7cffbdc99fd03653cc72605fd9e171eb181a622e88756166c632e381f4fdc78"
+    },
+    {
+      "id": "H05",
+      "url": "https://xyq.163.com/wh/20240408/4907_1147836.html",
+      "publication_date": "2024-04-08",
+      "effective_test_date": null,
+      "all_server_effective_date": "2024-04-09",
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "86fe1dcc0b173d62cdbfa27909a0b4deb232cd0f62b7725c97bbec957fc651a5"
+    },
+    {
+      "id": "H06",
+      "url": "https://xyq.163.com/2015/7/17/4907_542189.html",
+      "publication_date": "2015-07-17",
+      "effective_test_date": "2015-07-21",
+      "all_server_effective_date": "2015-07-28",
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "22c55be62e25878a667ab2c9e69b52e52818bfb5dacfc729c260a764134de2d9"
+    },
+    {
+      "id": "H07",
+      "url": "https://xyq.163.com/2015/7/27/4907_545465.html",
+      "publication_date": "2015-07-27",
+      "effective_test_date": null,
+      "all_server_effective_date": "2015-07-28",
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "666c2fd84a6d7b027b67525e5a8939a1bdbf794e543d8ebecd8c763f23588a5e"
+    },
+    {
+      "id": "H08",
+      "url": "https://xyq.163.com/wh/20240520/4907_1155726.html",
+      "publication_date": "2024-05-20",
+      "effective_test_date": null,
+      "all_server_effective_date": "2024-05-21",
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "f0bf4e1afac0ddfd3b34c5bccaddb5ef55f3097054d962cbe5ceb409c84f520c"
+    },
+    {
+      "id": "H09",
+      "url": "https://xyq.163.com/introduce/2013/1/28/5015_359141.html",
+      "publication_date": "2012-12-28",
+      "effective_test_date": null,
+      "all_server_effective_date": null,
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "6fc38bed9c15a6d4fa678e490a4eed2255d6ff98f293f3a2a31caed0bc076172"
+    },
+    {
+      "id": "O01",
+      "url": "https://jingyan.baidu.com/article/b87fe19e8635e75218356813.html",
+      "publication_date": "2014-09-17",
+      "effective_test_date": null,
+      "all_server_effective_date": null,
+      "edition_scope": "历史电脑版社区作者截图；非官方政策及非2026实测",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "20990fe2e959320348633bc2763d0756e0d19aa0dc943502e2e4edebf7e4683b"
+    },
+    {
+      "id": "P01",
+      "url": "https://xyq.163.com/2013/3/11/4907_363789.html",
+      "publication_date": "2013-03-11",
+      "effective_test_date": "2013-03-12",
+      "all_server_effective_date": "2013-03-19",
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "7340707915e7b07259773f8e8e30a1551e887fb7d6419f366fea7a0e2f021cee"
+    },
+    {
+      "id": "P02",
+      "url": "https://xyq.163.com/2013/3/18/4907_364597.html",
+      "publication_date": "2013-03-18",
+      "effective_test_date": null,
+      "all_server_effective_date": "2013-03-19",
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "c22a6c458f558adf8cd71723dd73167288dd637daa7b8dedba5a11044743dd1e"
+    },
+    {
+      "id": "P03",
+      "url": "https://xyq.163.com/2015/6/6/4905_529431.html",
+      "publication_date": "2015-06-09",
+      "effective_test_date": "2015-06-09",
+      "all_server_effective_date": "2015-06-16",
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "5dd46243efc2b21b68c3a6001dbe60dd3af54f2a15f31b2fb629545da0a9c88b"
+    },
+    {
+      "id": "P04",
+      "url": "https://xyq.163.com/2015/6/15/4907_531671.html",
+      "publication_date": "2015-06-15",
+      "effective_test_date": null,
+      "all_server_effective_date": "2015-06-16",
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "e71af623389ffaa08d934d89a1a0da93b16fa6d54f1d46f1997429078a12d035"
+    },
+    {
+      "id": "P05",
+      "url": "https://xyq.163.com/wh/20260327/4907_1293452.html",
+      "publication_date": "2026-03-31",
+      "effective_test_date": "2026-03-31",
+      "all_server_effective_date": "2026-04-07",
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "193b1564c9e082819214494c2b209bfa28809e276c740b309bef4d5186969466"
+    },
+    {
+      "id": "P06",
+      "url": "https://xyq.163.com/wh/20260403/4907_1294544.html",
+      "publication_date": "2026-04-06",
+      "effective_test_date": null,
+      "all_server_effective_date": "2026-04-07",
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "256b5b8e9bb8051c1e40986791a052e2f2c3d984d2ef86d4fbc2fde9516d6939"
+    },
+    {
+      "id": "P07",
+      "url": "https://xyq.163.com/wh/20260531/4907_1302347.html",
+      "publication_date": "2026-06-01",
+      "effective_test_date": "2026-06-02",
+      "all_server_effective_date": "2026-06-09",
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "b2f8b1a8d729a153ab6ab87680687d3a5c42c01967ef76cbd91b0b5f424a174a"
+    },
+    {
+      "id": "P08",
+      "url": "https://xyq.163.com/wh/20260604/4907_1302930.html",
+      "publication_date": "2026-06-09",
+      "effective_test_date": null,
+      "all_server_effective_date": "2026-06-09",
+      "edition_scope": "电脑版常规服务器／时间服；不自动套用畅玩服或手游",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "3eb27c3fe0f729ccdffa212908064499ca2414587b6bb207da66454d09a4101b"
+    },
+    {
+      "id": "C01",
+      "url": "https://xyq.163.com/jyc/update/20260716/39387_1307952.html",
+      "publication_date": "2026-07-20",
+      "effective_test_date": "2026-07-21",
+      "all_server_effective_date": "2026-07-28",
+      "edition_scope": "电脑版畅玩服",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "673bfbead43aae78b66f4f0f44f44381b8260e5546ba967f1fbc2ad48607fabd"
+    },
+    {
+      "id": "C02",
+      "url": "https://xyq.163.com/jyc/update/20260723/39387_1308926.html",
+      "publication_date": "2026-07-27",
+      "effective_test_date": null,
+      "all_server_effective_date": "2026-07-28",
+      "edition_scope": "电脑版畅玩服",
+      "retrieved_date": "2026-10-07",
+      "date_note": "网页显示发布日期与生效日分别记录；未从URL路径猜发布时间",
+      "snapshot_sha256": "06cacef227ffd4ba56579b834152f08530461f7c7621178e2b2c799cd5f9ac3a"
+    }
+  ],
+  "claims": [
+    {
+      "id": "HUMAN-SELF",
+      "claim": "80级人物武器普通自修要求打造技巧至少40、修理失败次数少于3",
+      "status": "official_explicit",
+      "source_ids": [
+        "H01"
+      ],
+      "limits": [
+        "这是自修条件，不应成为所有修理路线的必问门槛"
+      ]
+    },
+    {
+      "id": "HUMAN-STALL",
+      "claim": "玩家摆摊可卖修理服务，修理概率等于摊主在铁匠铺／布店自行修理的概率",
+      "status": "official_explicit_historical",
+      "source_ids": [
+        "H03",
+        "H04",
+        "H05"
+      ],
+      "limits": [
+        "不是NPC无条件代修；不保证成功；不得将摊主熟练度高等同成功率公式"
+      ]
+    },
+    {
+      "id": "HUMAN-STALL-ENTRY",
+      "claim": "右键摊位招牌，进入制造类服务；制造者体力不足时“打造及打造类修理”等选项置灰",
+      "status": "official_explicit_composed",
+      "source_ids": [
+        "H02",
+        "H04",
+        "H05"
+      ],
+      "limits": [
+        "两个入口事实由不同官方页组成；2024灰显变化已全服放出"
+      ]
+    },
+    {
+      "id": "HUMAN-STALL-FINAL",
+      "claim": "80武器买方完整修理对话框、选档及最终按钮位置",
+      "status": "not_verified",
+      "source_ids": [],
+      "limits": [
+        "2014社区截图3证明“打造类修理”存在；截图4是卖方下架界面，不能充作买方完成证明",
+        "2007/2016官网“购买打造服务”截图是打造书铁，不是修理，不能伪装成修理操作证据"
+      ]
+    },
+    {
+      "id": "HUMAN-QUICK",
+      "claim": "人物装备耐久≤10时，点装备图标右下角修理按钮即可开启快捷修理；可作为不依赖帮派和本人打造技能的替代入口",
+      "status": "official_explicit_plus_bounded_inference",
+      "source_ids": [
+        "H06",
+        "H07",
+        "H08"
+      ],
+      "limits": [
+        "不依赖本人技能是由独立快捷修理规则得出的合理范围推断；原公告未逐字写“无技能要求”",
+        "用户0耐久符合≤10，无须额外询问"
+      ]
+    },
+    {
+      "id": "HUMAN-QUICK-RATE",
+      "claim": "2015官方表列≤80装备每次10仙玉、增加100耐久",
+      "status": "historical_official_rate_not_current_quote",
+      "source_ids": [
+        "H06",
+        "H07"
+      ],
+      "limits": [
+        "当前2026价格未独立复核；不能承诺现在仍10仙玉",
+        "2024起免费仙玉不能用于该快捷修理或购买乾坤石；必须提示有仙玉成本并让玩家自主选择"
+      ]
+    },
+    {
+      "id": "HUMAN-STONE",
+      "claim": "破损乾坤石对应0–80人物装备；已激活石右键后可选装备补耐久，三失败人物装备可用",
+      "status": "official_explicit_legacy_still_relevant",
+      "source_ids": [
+        "H09"
+      ],
+      "limits": [
+        "2013路径页显示发布日期2012-12-28，正文历经更新日期不详",
+        "10仙玉激活价仅历史列价",
+        "原页“只允许人物装备”已被2026宠装补丁覆盖，不能继续全局拒绝宠装"
+      ]
+    },
+    {
+      "id": "PET-PEARL-3FAIL",
+      "claim": "失败三次的召唤兽装备仍允许用珍珠",
+      "status": "official_explicit_with_rollout",
+      "source_ids": [
+        "P01",
+        "P02"
+      ],
+      "limits": []
+    },
+    {
+      "id": "PET-PEARL-LEVEL",
+      "claim": "珍珠等级+5≥召唤兽装备等级；补200耐久且受耐久上限影响",
+      "status": "official_explicit_with_rollout",
+      "source_ids": [
+        "P01",
+        "P02"
+      ],
+      "limits": [
+        "没有给出人物装备80%阈值可移植到宠装的依据",
+        "不是恢复200点上限、不清除失败次数的证据"
+      ]
+    },
+    {
+      "id": "PET-PEARL-OPEN",
+      "claim": "右键珍珠可给指定装备、灵饰、召唤兽装备补耐久",
+      "status": "official_explicit_with_rollout",
+      "source_ids": [
+        "P03",
+        "P04",
+        "P07",
+        "P08"
+      ],
+      "limits": []
+    },
+    {
+      "id": "PET-PEARL-SLOTS",
+      "claim": "使用珍珠／乾坤石界面支持切换道具、行囊、人物装备、召唤兽装备栏",
+      "status": "official_explicit_with_rollout",
+      "source_ids": [
+        "P05",
+        "P06"
+      ],
+      "limits": []
+    },
+    {
+      "id": "PET-PEARL-ROUTE",
+      "claim": "时间服：右键珍珠→按物品所在位置切到召唤兽装备栏或道具／行囊栏→选择目标宠装补耐久",
+      "status": "officially_documented_composed_route",
+      "source_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06"
+      ],
+      "limits": [
+        "无须去NPC或炉子才能启动本路线",
+        "最后消费按钮名称与确切点击序列没有实测；不写死“确定／修复”、不承诺预览"
+      ]
+    },
+    {
+      "id": "PET-STONE-NEW",
+      "claim": "2026-04-07起时间服已全服允许激活乾坤石给召唤兽装备补200耐久",
+      "status": "official_explicit_with_rollout",
+      "source_ids": [
+        "P05",
+        "P06"
+      ],
+      "limits": [
+        "具体石头等级适用上限见原表，不照搬人物范围",
+        "三失败宠装用乾坤石仍无独立直接证据，本轮不作为三失败保底路线"
+      ]
+    },
+    {
+      "id": "CHANGWAN-PEARL-ENTRY",
+      "claim": "畅玩服：道具行囊→召唤兽页签→选召唤兽→右键珍珠／乾坤石，打开对应召唤兽装备修理界面，无须卸装",
+      "status": "official_explicit_with_rollout",
+      "source_ids": [
+        "C01",
+        "C02"
+      ],
+      "limits": [
+        "时间服有独立栏位切换证据，但不得把本条选宠物自动定位行为无条件移植过去"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "context": {
+    "server": "测试区",
+    "currency": "两",
+    "as_of": "2026-10-06",
+    "max_age_days": 7
+  },
+  "self_upgrade": {
+    "purchases": [
+      {
+        "label": "9级",
+        "quantity": "1",
+        "quote": {
+          "amount": "10",
+          "currency": "两",
+          "server": "测试区",
+          "observed_on": "2026-10-06",
+          "source": "synthetic user quote for test",
+          "kind": "user_quote"
+        }
+      },
+      {
+        "label": "10级",
+        "quantity": "1",
+        "quote": {
+          "amount": "20",
+          "currency": "两",
+          "server": "测试区",
+          "observed_on": "2026-10-06",
+          "source": "synthetic user quote for test",
+          "kind": "user_quote"
+        }
+      }
+    ],
+    "fees": [
+      {
+        "label": "手续费",
+        "quantity": "1",
+        "quote": {
+          "amount": "2",
+          "currency": "两",
+          "server": "测试区",
+          "observed_on": "2026-10-06",
+          "source": "synthetic user quote for test",
+          "kind": "user_quote"
+        }
+      }
+    ],
+    "owned_materials": [
+      {
+        "label": "库存",
+        "quantity": "1",
+        "quote": {
+          "amount": "4",
+          "currency": "两",
+          "server": "测试区",
+          "observed_on": "2026-10-06",
+          "source": "synthetic user quote for test",
+          "kind": "user_quote"
+        }
+      }
+    ],
+    "eligible": "confirmed"
+  },
+  "replacement": {
+    "purchase": {
+      "amount": "50",
+      "currency": "两",
+      "server": "测试区",
+      "observed_on": "2026-10-06",
+      "source": "synthetic user quote for test",
+      "kind": "user_quote"
+    },
+    "fees": [
+      {
+        "label": "费用",
+        "quantity": "1",
+        "quote": {
+          "amount": "3",
+          "currency": "两",
+          "server": "测试区",
+          "observed_on": "2026-10-06",
+          "source": "synthetic user quote for test",
+          "kind": "user_quote"
+        }
+      }
+    ],
+    "old_item_resale": {
+      "quote": {
+        "amount": "15",
+        "currency": "两",
+        "server": "测试区",
+        "observed_on": "2026-10-06",
+        "source": "synthetic user quote for test",
+        "kind": "user_quote"
+      },
+      "fees": [
+        {
+          "label": "出售费",
+          "quantity": "1",
+          "quote": {
+            "amount": "1",
+            "currency": "两",
+            "server": "测试区",
+            "observed_on": "2026-10-06",
+            "source": "synthetic user quote for test",
+            "kind": "user_quote"
+          }
+        }
+      ],
+      "status": "conditional"
+    },
+    "eligible": "confirmed"
+  },
+  "sunk_cost": "100"
+}

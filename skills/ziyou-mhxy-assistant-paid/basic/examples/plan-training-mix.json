@@ -1,0 +1,26 @@
+{
+  "context": {
+    "server": "合成测试区",
+    "currency": "两",
+    "as_of": "2026-10-06",
+    "max_age_days": 7
+  },
+  "cultivation": {
+    "type": "attack",
+    "currentLevel": 0,
+    "targetLevel": 9,
+    "currentProgressXp": 0,
+    "confirmedCap": 20
+  },
+  "item_xp": "50",
+  "item_xp_evidence": "合成用户确认每颗50XP",
+  "item_quote": {
+    "amount": "140000",
+    "currency": "两",
+    "server": "合成测试区",
+    "observed_on": "2026-10-06",
+    "source": "synthetic regression data, not market price",
+    "kind": "user_quote"
+  },
+  "mixing_eligibility": "confirmed"
+}

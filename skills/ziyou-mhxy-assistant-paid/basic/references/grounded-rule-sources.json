@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "checked_date": "2026-10-07",
+  "scope": "MHXY PC time-server; no mobile/畅玩服",
+  "rules": [
+    {
+      "id": "ordinary_repair",
+      "url": "https://xyq.163.com/introduce/jn005.html",
+      "published_on": "2013-01-05",
+      "effective_on": null,
+      "checked_date": "2026-10-07",
+      "source_scope": "historical_official_rule"
+    },
+    {
+      "id": "pet_repair",
+      "url": "https://xyq.163.com/2007/fbcq/fbcq_02.html",
+      "published_on": null,
+      "effective_on": null,
+      "checked_date": "2026-10-07",
+      "source_scope": "historical_official_rule"
+    },
+    {
+      "id": "qiankun",
+      "url": "https://xyq.163.com/introduce/2013/1/28/5015_359141.html",
+      "published_on": "2012-12-28",
+      "effective_on": null,
+      "checked_date": "2026-10-07",
+      "source_scope": "historical_official_rule"
+    },
+    {
+      "id": "pearl_preview",
+      "url": "https://xyq.163.com/wh/20250606/4907_1238835.html",
+      "published_on": "2025-06-09",
+      "effective_on": "2025-06-10",
+      "checked_date": "2026-10-07",
+      "source_scope": "partial_server_test_only"
+    },
+    {
+      "id": "xiuyedian_test",
+      "url": "https://xyq.163.com/wh/20260531/4907_1302347.html",
+      "published_on": "2026-06-01",
+      "effective_on": "2026-06-02",
+      "checked_date": "2026-10-07",
+      "source_scope": "partial_server_prompt_test"
+    },
+    {
+      "id": "xiuyedian_release",
+      "url": "https://xyq.163.com/wh/20260604/4907_1302930.html",
+      "published_on": "2026-06-09",
+      "effective_on": "2026-06-09",
+      "checked_date": "2026-10-07",
+      "source_scope": "all_server_prompt_release"
+    },
+    {
+      "id": "ordinary_gem",
+      "url": "https://xyq.163.com/introduce/dj008.html",
+      "published_on": "2013-01-02",
+      "effective_on": null,
+      "checked_date": "2026-10-07",
+      "source_scope": "historical_official_rule"
+    },
+    {
+      "id": "cage",
+      "url": "https://xyq.163.com/introduce/2012/2/6/5014_262875.html",
+      "published_on": "2012-02-06",
+      "effective_on": null,
+      "checked_date": "2026-10-07",
+      "source_scope": "historical_official_rule"
+    },
+    {
+      "id": "gem_synthesis_2024",
+      "url": "https://xyq.163.com/news/20240520/4999_1156134.html",
+      "published_on": "2024-05-20",
+      "effective_on": "2024-05-21",
+      "all_server_effective_on": "2024-05-21",
+      "checked_date": "2026-10-07",
+      "source_scope": "all_server_rule_amendment",
+      "locator": "第3项普通宝石目标等级、技能与额外材料；全服公告第3项发布链"
+    },
+    {
+      "id": "gem_synthesis_release",
+      "url": "https://xyq.163.com/wh/20240520/4907_1155726.html",
+      "published_on": "2024-05-20",
+      "effective_on": "2024-05-21",
+      "all_server_effective_on": "2024-05-21",
+      "checked_date": "2026-10-07",
+      "source_scope": "all_server_release",
+      "locator": "全部服务器放出第3项"
+    }
+  ],
+  "limits": [
+    "Fixed publication/effect/check dates; not a comprehensive later-patch audit",
+    "No redistributed publisher HTML or imagery",
+    "Direct inlay guarantee/skill and character pearl formula remain unverified",
+    "rc15 only reconciles confirmed cage and ordinary-gem amendments; all other per-source dates and historical records preserved"
+  ]
+}

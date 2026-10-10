@@ -1,0 +1,20 @@
+{
+  "schema": "mhxy-crafting-config/v1",
+  "ruleset": "pc_time",
+  "server": "条件示例区（不是用户区服）",
+  "bead_type": "回春（条件示例）",
+  "objective": "loose",
+  "target_grade": 6,
+  "capacity": 20,
+  "acquire_grade": 1,
+  "as_of": "2026-10-07T00:00:00Z",
+  "inventory": {},
+  "confirmations": {},
+  "inventory_source": {
+    "kind": "scenario",
+    "server": "条件示例区（不是用户区服）",
+    "bead_type": "回春（条件示例）",
+    "observed_at": "2026-10-07T00:00:00Z",
+    "note": "原创合成示例：空散珠库存、20个流程总可用格，不是玩家实际库存"
+  }
+}

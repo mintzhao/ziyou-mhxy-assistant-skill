@@ -1,0 +1,112 @@
+{
+  "title": "合成完整预算决策",
+  "context": {
+    "server": "合成测试区",
+    "currency": "两",
+    "as_of": "2026-10-06",
+    "max_age_days": 7
+  },
+  "budget": "100",
+  "reserve": "10",
+  "goals": [
+    {
+      "id": "shoe",
+      "target": "已确认鞋10段",
+      "basis": "用户自选目标"
+    },
+    {
+      "id": "repair",
+      "target": "维修完成",
+      "basis": "用户自选目标"
+    }
+  ],
+  "already_met": [],
+  "available_resources": {
+    "inventory_g9": "1"
+  },
+  "options": [
+    {
+      "id": "upgrade",
+      "label": "合成项目 upgrade",
+      "system": "gem",
+      "goals": [
+        "shoe"
+      ],
+      "costs": [
+        {
+          "label": "合成报价",
+          "quantity": "1",
+          "quote": {
+            "amount": "60",
+            "currency": "两",
+            "server": "合成测试区",
+            "observed_on": "2026-10-06",
+            "source": "synthetic regression data, not market price",
+            "kind": "user_quote"
+          }
+        }
+      ],
+      "eligibility": "confirmed",
+      "effect_basis": "测试假设，非战斗公式",
+      "requires": [],
+      "conflicts": [],
+      "consumes": {
+        "inventory_g9": "1"
+      }
+    },
+    {
+      "id": "replace",
+      "label": "合成项目 replace",
+      "system": "gem",
+      "goals": [
+        "shoe"
+      ],
+      "costs": [
+        {
+          "label": "合成报价",
+          "quantity": "1",
+          "quote": {
+            "amount": "75",
+            "currency": "两",
+            "server": "合成测试区",
+            "observed_on": "2026-10-06",
+            "source": "synthetic regression data, not market price",
+            "kind": "user_quote"
+          }
+        }
+      ],
+      "eligibility": "confirmed",
+      "effect_basis": "测试假设，非战斗公式",
+      "requires": [],
+      "conflicts": [],
+      "consumes": {}
+    },
+    {
+      "id": "repair",
+      "label": "合成项目 repair",
+      "system": "gem",
+      "goals": [
+        "repair"
+      ],
+      "costs": [
+        {
+          "label": "合成报价",
+          "quantity": "1",
+          "quote": {
+            "amount": "20",
+            "currency": "两",
+            "server": "合成测试区",
+            "observed_on": "2026-10-06",
+            "source": "synthetic regression data, not market price",
+            "kind": "user_quote"
+          }
+        }
+      ],
+      "eligibility": "confirmed",
+      "effect_basis": "测试假设，非战斗公式",
+      "requires": [],
+      "conflicts": [],
+      "consumes": {}
+    }
+  ]
+}

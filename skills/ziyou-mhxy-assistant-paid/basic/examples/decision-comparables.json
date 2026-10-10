@@ -1,0 +1,59 @@
+{
+  "context": {
+    "server": "测试区",
+    "currency": "两",
+    "as_of": "2026-10-06"
+  },
+  "category": "account",
+  "subject": {
+    "ruleset": "电脑版时间服",
+    "level": 109,
+    "school": "狮驼岭",
+    "human_cultivation": "3项满",
+    "pet_cultivation": "4项满",
+    "skills": "指定技能全部119",
+    "included_assets": "空号，无装备宠物"
+  },
+  "comparables": [
+    {
+      "id": "synthetic-a",
+      "features": {
+        "ruleset": "电脑版时间服",
+        "level": 109,
+        "school": "狮驼岭",
+        "human_cultivation": "3项满",
+        "pet_cultivation": "4项满",
+        "skills": "指定技能全部119",
+        "included_assets": "空号，无装备宠物"
+      },
+      "quote": {
+        "amount": "100",
+        "currency": "两",
+        "server": "测试区",
+        "observed_on": "2026-10-06",
+        "source": "synthetic user quote for test",
+        "kind": "asking"
+      }
+    },
+    {
+      "id": "synthetic-b",
+      "features": {
+        "ruleset": "电脑版时间服",
+        "level": 109,
+        "school": "狮驼岭",
+        "human_cultivation": "3项满",
+        "pet_cultivation": "4项满",
+        "skills": "指定技能全部119",
+        "included_assets": "空号，无装备宠物"
+      },
+      "quote": {
+        "amount": "120",
+        "currency": "两",
+        "server": "测试区",
+        "observed_on": "2026-10-06",
+        "source": "synthetic user quote for test",
+        "kind": "asking"
+      }
+    }
+  ]
+}

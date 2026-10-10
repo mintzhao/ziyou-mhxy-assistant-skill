@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "ruleVersion": "pc-time-routes-2026-10-06",
+  "checkedDate": "2026-10-06",
+  "scope": "梦幻西游电脑版时间服；不适用于手游/畅玩服",
+  "policy": "Primary official publisher material only. Community sources describe user needs, never rule authority. Date is verification date, not a guarantee that every game change is covered.",
+  "sources": [
+    {
+      "id": "person",
+      "title": "官方人物修炼",
+      "url": "https://xyq.163.com/introduce/zd008.html",
+      "publisher": "网易《梦幻西游》电脑版官网",
+      "authority": "official_publisher",
+      "publishedDate": "2013-01-03",
+      "checkedDate": "2026-10-06",
+      "locator": "修炼种类、具体修炼效果、修炼条件",
+      "retrieval": "Read-only HTTPS retrieval; primary web extractor failed on some official pages, so standard-library HTTP was used. No retrieval code is shipped."
+    },
+    {
+      "id": "ascend",
+      "title": "官方角色飞升",
+      "url": "https://xyq.163.com/introduce/zd009.html",
+      "publisher": "网易《梦幻西游》电脑版官网",
+      "authority": "official_publisher",
+      "publishedDate": "2013-01-02",
+      "checkedDate": "2026-10-06",
+      "locator": "飞升效果第8项；飞升任务领取要求",
+      "retrieval": "Read-only HTTPS retrieval; primary web extractor failed on some official pages, so standard-library HTTP was used. No retrieval code is shipped."
+    },
+    {
+      "id": "pet",
+      "title": "官方召唤兽修炼",
+      "url": "https://xyq.163.com/introduce/zhs010.html",
+      "publisher": "网易《梦幻西游》电脑版官网",
+      "authority": "official_publisher",
+      "publishedDate": "2013-01-01",
+      "checkedDate": "2026-10-06",
+      "locator": "任务奖励、领取任务、秘传修炼",
+      "retrieval": "Read-only HTTPS retrieval; primary web extractor failed on some official pages, so standard-library HTTP was used. No retrieval code is shipped."
+    },
+    {
+      "id": "gems",
+      "title": "官方宝石",
+      "url": "https://xyq.163.com/introduce/dj008.html",
+      "publisher": "网易《梦幻西游》电脑版官网",
+      "authority": "official_publisher",
+      "publishedDate": "2013-01-02",
+      "checkedDate": "2026-10-06",
+      "locator": "镶嵌规则；宝石属性表",
+      "retrieval": "Read-only HTTPS retrieval; primary web extractor failed on some official pages, so standard-library HTTP was used. No retrieval code is shipped."
+    },
+    {
+      "id": "spirit",
+      "title": "官方灵饰",
+      "url": "https://xyq.163.com/introduce/2014/11/6/5015_474275.html",
+      "publisher": "网易《梦幻西游》电脑版官网",
+      "authority": "official_publisher",
+      "publishedDate": null,
+      "checkedDate": "2026-10-06",
+      "locator": "第五节灵饰强化；页面显示日期2013-01-04与URL年月不同，不据此确定发布日期",
+      "retrieval": "Read-only HTTPS retrieval; primary web extractor failed on some official pages, so standard-library HTTP was used. No retrieval code is shipped."
+    },
+    {
+      "id": "toolbox",
+      "title": "官方综合工具箱",
+      "url": "https://xyq.163.com/tools/index.html",
+      "publisher": "网易《梦幻西游》电脑版官网",
+      "authority": "official_publisher",
+      "publishedDate": null,
+      "checkedDate": "2026-10-06",
+      "locator": "装备特效精致；召唤兽修炼计算",
+      "retrieval": "Read-only HTTPS retrieval; primary web extractor failed on some official pages, so standard-library HTTP was used. No retrieval code is shipped."
+    },
+    {
+      "id": "toolbox_data",
+      "title": "官方综合工具箱公开计算数据",
+      "url": "https://xyq.res.netease.com/pc/zt/20220406145527/pkg/app_3b629e4.js",
+      "publisher": "网易《梦幻西游》电脑版官网",
+      "authority": "official_publisher",
+      "publishedDate": null,
+      "checkedDate": "2026-10-06",
+      "locator": "官方工具箱直接引用的静态资源：召唤兽累计修炼经验0至25数据；只核验事实，未复制程序",
+      "retrieval": "Read-only HTTPS retrieval; primary web extractor failed on some official pages, so standard-library HTTP was used. No retrieval code is shipped."
+    },
+    {
+      "id": "gem2024",
+      "title": "官方2024年5月21日宝石/星辉石合成调整",
+      "url": "https://xyq.163.com/news/20240520/4999_1156134.html",
+      "publisher": "网易《梦幻西游》电脑版官网",
+      "authority": "official_publisher",
+      "publishedDate": "2024-05-20",
+      "checkedDate": "2026-10-06",
+      "locator": "2024-05-21生效的全部服务器内容：宝石工艺等级、星辉石9至11额外材料",
+      "retrieval": "Read-only HTTPS retrieval; primary web extractor failed on some official pages, so standard-library HTTP was used. No retrieval code is shipped."
+    },
+    {
+      "id": "equipment_effects",
+      "title": "官方装备特效",
+      "url": "https://xyq.163.com/introduce/jn002.html",
+      "publisher": "网易《梦幻西游》电脑版官网",
+      "authority": "official_publisher",
+      "checkedDate": "2026-10-06",
+      "locator": "简易、无级别",
+      "retrieval": "Retained first-party text read on checked date; no runtime network"
+    }
+  ],
+  "rules": [
+    {
+      "id": "ordinary_cultivation",
+      "status": "verified",
+      "sources": [
+        "person"
+      ],
+      "paraphrase": "四修升级至r级所需XP=10(r²+3r+11)。普通修炼每次10XP、资材5；攻/法每次30000两，防/抗法20000两。角色≥5r+20，累计帮贡>150r，入帮>14天且帮派开放项目。",
+      "limits": "不涵盖快速模式或优惠"
+    },
+    {
+      "id": "ascension_mapping",
+      "status": "verified",
+      "sources": [
+        "ascend"
+      ],
+      "paraphrase": "选择飞升降修时，13→12/上限21，14→12/22，15→13/22，16→13/23，17→14/23，18→14/24，19→15/24，20→15/25；12及以下不降，猎术不受影响。飞升角色等级减少15；领取要求角色≥135且任意6项师门技能≥130。",
+      "limits": "这里仅建模四修；未把旧页面门派技能说明当成当前实战规则"
+    },
+    {
+      "id": "after_ascension_cap",
+      "status": "verified",
+      "sources": [
+        "ascend"
+      ],
+      "paraphrase": "已飞升且该项上限未到25，上限减当前等级小于2时，可降低一级修炼、提高一级上限。",
+      "limits": "实现保守限定已确认上限20至25；不推断实际账号解锁状态"
+    },
+    {
+      "id": "reset_progress_unknown",
+      "status": "unsupported",
+      "sources": [
+        "ascend"
+      ],
+      "paraphrase": "官方页面没有交代非零本级经验在飞升降修/后续降修中的清零或保留。",
+      "limits": "涉及降修且输入进度非零返回unsupported；只规划0进度等级边界"
+    },
+    {
+      "id": "gold_pill_xp_unverified",
+      "status": "unsupported",
+      "sources": [],
+      "paraphrase": "本次未从可核实官方出版资料确认九转金丹品质÷2及奇数品质取整。",
+      "limits": "用户须手动提供游戏内每颗实际XP和依据；quality仅描述道具，不参与XP推导。不能把社区答案升级为官方规则"
+    },
+    {
+      "id": "pet_fruit_xp",
+      "status": "verified",
+      "sources": [
+        "pet"
+      ],
+      "paraphrase": "修炼果每颗增加选定召唤兽修炼150XP。",
+      "limits": "不由此推出每日次数或封顶余量的保留"
+    },
+    {
+      "id": "pet_xp_schedule",
+      "status": "verified",
+      "sources": [
+        "toolbox",
+        "toolbox_data"
+      ],
+      "paraphrase": "官网工具箱的0至25累计XP事实表为0,150,360,650,1040,1550,2200,3010,4000,5190,6600,8250,10160,12350,14840,17650,20800,24310,28200,32490,37200,42350,47960,54050,60640,67750；相邻差分与人物修炼公式一致。",
+      "limits": "只记录游戏资源数据及独立重算，不分发官方JS或界面资产"
+    },
+    {
+      "id": "pet_eligibility_partial",
+      "status": "partial",
+      "sources": [
+        "pet",
+        "toolbox",
+        "toolbox_data"
+      ],
+      "paraphrase": "任务/秘传任务门槛≥65；旧介绍写20上限，当前工具箱支持25并给出max(65,5×目标+20)的任务等级参考。",
+      "limits": "不混同任务参与和道具使用；实际解锁上限由用户确认。修炼果每日限制、特殊上限解锁与道具资格均未独立核实"
+    },
+    {
+      "id": "ordinary_gem_insertion",
+      "status": "verified",
+      "sources": [
+        "gems"
+      ],
+      "paraphrase": "普通宝石按当前锻炼+1逐级镶嵌，每颗提供固定原始属性；同件最多两类；适用部位看官方表。普通上限为原装备要求等级/10，无级别不受该等级限制。",
+      "limits": "介绍后文简写为宝石等级大于锻炼；采用开头明确的逐级禁止跳级说明。仅支持原等级0至160且10倍数及8种普通属性石"
+    },
+    {
+      "id": "refined_gem_cap",
+      "status": "verified",
+      "sources": [
+        "toolbox"
+      ],
+      "paraphrase": "精致特效将装备宝石镶嵌等级上限增加1。",
+      "limits": "简易不把原装备等级变成低5级的装备；无级别与精致组合不凭空给出终极全局上限"
+    },
+    {
+      "id": "star_base_recipe",
+      "status": "verified",
+      "sources": [
+        "spirit"
+      ],
+      "paraphrase": "3颗同级星辉石合成高一级；合成成功率与宝石工艺有关；一般灵饰镶嵌等级不得超过灵饰等级/10。",
+      "limits": "本函数只计算指定等级成品所需材料，不宣称已核实所有逐级插入或特效规则"
+    },
+    {
+      "id": "star_2024_recipe",
+      "status": "verified",
+      "sources": [
+        "gem2024",
+        "toolbox"
+      ],
+      "paraphrase": "2024-05-21起，星辉石9级额外用5级1颗；10级额外用6级和7级各1颗；11级额外用9级1颗。这三档合成必成功。星辉石合成2级需工艺4，3至5需5，6至7需6，8至11需7。",
+      "limits": "≤8级失败概率与损耗未建模；12级及以上不支持。3^(g−1)仅是1至8级的无失败材料数"
+    },
+    {
+      "id": "star_attribute_unknown",
+      "status": "unsupported",
+      "sources": [
+        "spirit"
+      ],
+      "paraphrase": "已核实页面只说明强化随机属性，未给逐属性的固定增量。",
+      "limits": "不生成每锻气血、伤害、速度等数值"
+    },
+    {
+      "id": "role_skill_leveling_not_implemented",
+      "status": "unsupported",
+      "sources": [],
+      "paraphrase": "本版未独立完成角色升级与师门技能完整费用表的逐段验证。",
+      "limits": "不从第三方计算器复制公式/代码；请使用游戏内费用或官方工具箱单独核对"
+    },
+    {
+      "id": "wearing_level_effects",
+      "status": "verified",
+      "sources": [
+        "equipment_effects"
+      ],
+      "paraphrase": "简易将佩带装备的人物等级要求降低5级；无级别在佩带时没有角色等级限制。",
+      "limits": "仅检查人物等级门槛，不核对造型、武器类型、性别、门派、种族或其他穿戴要求"
+    }
+  ]
+}

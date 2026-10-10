@@ -1,0 +1,38 @@
+{
+  "scope": "纯合成示例：目标养号的列项；人物升级/技能规则尚未确认",
+  "budgets": {
+    "两": "20000000"
+  },
+  "lines": [
+    {
+      "id": "character",
+      "system": "角色等级",
+      "label": "升级到用户目标等级",
+      "currency": "两",
+      "amount": null,
+      "status": "required",
+      "source": "未知，待用户/官方确认"
+    },
+    {
+      "id": "skills",
+      "system": "门派技能",
+      "label": "用户指定技能目标",
+      "currency": "两",
+      "amount": null,
+      "status": "required",
+      "source": "未知，待用户/官方确认"
+    },
+    {
+      "id": "cultivation",
+      "system": "人物修炼",
+      "label": "仅作账本演示，需另跑资源模块",
+      "currency": "两",
+      "amount": "15570000",
+      "status": "required",
+      "source": "合成示例，不是全部养号总价",
+      "resources": {
+        "修炼经验": "5190"
+      }
+    }
+  ]
+}

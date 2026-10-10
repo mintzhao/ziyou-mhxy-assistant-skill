@@ -1,0 +1,33 @@
+{
+  "as_of": "2026-10-07",
+  "edition": "电脑版时间服",
+  "sources": [
+    {
+      "id": "r",
+      "origin": "public_page",
+      "url": "https://xyq.163.com/example-not-real",
+      "status": "readable",
+      "read_on": "2026-10-07",
+      "text": "合成测试资料，不是真实游戏规则。电脑版时间服；2026年10月1日全服。测试规则值甲。"
+    }
+  ],
+  "claims": [
+    {
+      "id": "r1",
+      "topic": "合成测试主题",
+      "value": "值甲",
+      "source_id": "r",
+      "excerpt": "测试规则值甲",
+      "edition": "电脑版时间服",
+      "rollout": "full",
+      "published_on": "2026-09-30",
+      "effective_on": "2026-10-01",
+      "verified_on": "2026-10-02",
+      "scope_evidence": {
+        "edition": "电脑版时间服",
+        "rollout": "全服",
+        "effective_on": "2026年10月1日"
+      }
+    }
+  ]
+}

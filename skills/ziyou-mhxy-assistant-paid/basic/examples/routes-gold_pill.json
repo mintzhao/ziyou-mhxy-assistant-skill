@@ -1,0 +1,10 @@
+{
+  "type": "attack",
+  "currentLevel": "0",
+  "targetLevel": "9",
+  "currentProgressXp": "0",
+  "confirmedCap": "9",
+  "quality": "100",
+  "confirmedItemXp": "50",
+  "itemXpEvidence": "教学示例：假定用户已在游戏内确认本颗道具实际增加50经验；本示例不验证品质换算公式"
+}

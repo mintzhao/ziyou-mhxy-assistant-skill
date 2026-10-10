@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "checked_at_utc": "2026-10-07T06:23:00Z",
+  "scope": "MHXY PC time-server; not mobile, seasonal, or 畅玩服",
+  "rules": [
+    {
+      "id": "pet_equipment_pearl",
+      "status": "primary_current_indexed",
+      "rules": {
+        "pearl_repair_durability": 200,
+        "min_pearl_level_for_equipment": "equipment_level - 5",
+        "eligibility": "pearl_level + 5 >= equipment_level",
+        "three_failure_block_applies_to": "天眼珠",
+        "pearl_after_three_failures": "official_explicit_allowed; all servers effective 2013-03-19",
+        "restoration_cap": "min(200, maximum_durability - current_durability) when inputs and qualifications are known"
+      },
+      "derived_examples": [
+        {
+          "equipment_level": 115,
+          "pearl_level": 110,
+          "eligible": true
+        },
+        {
+          "equipment_level": 115,
+          "pearl_level": 120,
+          "eligible": true
+        }
+      ],
+      "sources": [
+        "https://xyq.163.com/2013/3/11/4907_363789.html",
+        "https://xyq.163.com/2013/3/18/4907_364597.html"
+      ],
+      "unknowns": [
+        "live_game_retest",
+        "market_price"
+      ],
+      "checked_date": "2026-10-07",
+      "all_server_effective_on": "2013-03-19"
+    },
+    {
+      "id": "pet_leveling_cage",
+      "status": "primary_current_indexed",
+      "rules": {
+        "min_pet_level": 30,
+        "npc_purchase_game_currency": 2000000,
+        "max_cages_per_courtyard": 2,
+        "pets_trained_concurrently": 1,
+        "max_hours_per_day": 4,
+        "stamina_cost_per_xp_tick_before_2_hours": 2,
+        "low_stamina_xp_multiplier": 0.5,
+        "stamina_free_after_hours": 2,
+        "moving_allowed": false,
+        "level_cap": "min(character_level + 10, progression_cap)",
+        "progression_caps": {
+          "not_flyup": 150,
+          "flyup_not_dujie": 160,
+          "dujie": 180
+        },
+        "affected_by": [
+          "jingxiu_time"
+        ],
+        "not_affected_by": [
+          "double_time"
+        ]
+      },
+      "checked_date": "2026-10-07",
+      "experience_time_rule": {
+        "test_effective_on": "2015-06-09",
+        "all_server_effective_on": "2015-06-16",
+        "source_precedence": "2015 maintenance adjustment supersedes the time-bonus wording in the 2012 introduction",
+        "historical_snapshot_policy": "Before 2015-06-16, do not apply this later adjustment as an all-server rule",
+        "historical_multiplier_note": "2015 base XP 2x and XP with jingxiu 3.2x both compare with the same pre-adjustment base; 3.2x is not relative to the adjusted base and is not an XP-speed model"
+      },
+      "jingxiu_status_display": {
+        "test_effective_on": "2026-01-27",
+        "all_server_effective_on": "2026-02-03",
+        "meaning": "Cage interface shows whether jingxiu time is active; corroborates continued jingxiu relevance, without restoring double-time effects",
+        "current_player_status": "not_observed"
+      },
+      "source_history": [
+        {
+          "url": "https://xyq.163.com/2015/6/6/4905_529431.html",
+          "published_on": "2015-06-09",
+          "effective_on": "2015-06-09",
+          "scope": "partial_server_test_only"
+        },
+        {
+          "url": "https://xyq.163.com/2015/6/15/4907_531671.html",
+          "published_on": "2015-06-15",
+          "effective_on": "2015-06-16",
+          "scope": "all_server_release"
+        },
+        {
+          "url": "https://xyq.163.com/wh/20260123/4907_1283382.html",
+          "published_on": "2026-01-26",
+          "effective_on": "2026-01-27",
+          "scope": "partial_server_status_display_test"
+        },
+        {
+          "url": "https://xyq.163.com/wh/20260202/4907_1284942.html",
+          "published_on": "2026-02-02",
+          "effective_on": "2026-02-03",
+          "scope": "all_server_status_display_release"
+        }
+      ],
+      "derived_examples": [
+        {
+          "target_pet_level": 119,
+          "minimum_character_level_for_cage": 109,
+          "level_zero_direct_cage": false
+        }
+      ],
+      "sources": [
+        "https://xyq.163.com/introduce/",
+        "https://xyq.163.com/introduce/2012/2/6/5014_262875.html",
+        "https://xyq.163.com/introduce/cy008.html",
+        "https://xyq.163.com/2015/6/6/4905_529431.html",
+        "https://xyq.163.com/2015/6/15/4907_531671.html",
+        "https://xyq.163.com/wh/20260123/4907_1283382.html",
+        "https://xyq.163.com/wh/20260202/4907_1284942.html"
+      ],
+      "unknowns": [
+        "xp_per_tick",
+        "tick_interval",
+        "total_xp_0_to_119",
+        "total_runtime",
+        "total_game_currency_cost",
+        "RMB_cost"
+      ]
+    }
+  ]
+}

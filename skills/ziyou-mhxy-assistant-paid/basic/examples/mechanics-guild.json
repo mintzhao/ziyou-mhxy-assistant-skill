@@ -1,0 +1,96 @@
+{
+  "ruleset": "pc_time",
+  "skill": "合成技能逐级报价",
+  "current_level": 130,
+  "target_level": 140,
+  "source": "纯测试数据，并非游戏费用",
+  "guild_fee_index": "10",
+  "context": {
+    "server": "合成区",
+    "currency": "两",
+    "as_of": "2026-10-06"
+  },
+  "steps": [
+    {
+      "target_level": 131,
+      "experience": null,
+      "money_liang": null,
+      "contribution_spent": 131,
+      "contribution_gate": 655,
+      "materials": null
+    },
+    {
+      "target_level": 132,
+      "experience": null,
+      "money_liang": null,
+      "contribution_spent": 132,
+      "contribution_gate": 660,
+      "materials": null
+    },
+    {
+      "target_level": 133,
+      "experience": null,
+      "money_liang": null,
+      "contribution_spent": 133,
+      "contribution_gate": 665,
+      "materials": null
+    },
+    {
+      "target_level": 134,
+      "experience": null,
+      "money_liang": null,
+      "contribution_spent": 134,
+      "contribution_gate": 670,
+      "materials": null
+    },
+    {
+      "target_level": 135,
+      "experience": null,
+      "money_liang": null,
+      "contribution_spent": 135,
+      "contribution_gate": 675,
+      "materials": null
+    },
+    {
+      "target_level": 136,
+      "experience": null,
+      "money_liang": null,
+      "contribution_spent": 136,
+      "contribution_gate": 680,
+      "materials": null
+    },
+    {
+      "target_level": 137,
+      "experience": null,
+      "money_liang": null,
+      "contribution_spent": 137,
+      "contribution_gate": 685,
+      "materials": null
+    },
+    {
+      "target_level": 138,
+      "experience": null,
+      "money_liang": null,
+      "contribution_spent": 138,
+      "contribution_gate": 690,
+      "materials": null
+    },
+    {
+      "target_level": 139,
+      "experience": null,
+      "money_liang": null,
+      "contribution_spent": 139,
+      "contribution_gate": 695,
+      "materials": null
+    },
+    {
+      "target_level": 140,
+      "experience": null,
+      "money_liang": null,
+      "contribution_spent": 140,
+      "contribution_gate": 700,
+      "materials": null
+    }
+  ],
+  "starting_contribution": "1900"
+}

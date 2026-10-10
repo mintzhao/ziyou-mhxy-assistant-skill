@@ -1,0 +1,13 @@
+{
+  "ruleset": "pc_time",
+  "casts": [
+    {
+      "label": "已确认可专注的施法",
+      "count": 10,
+      "effective_mana_cost": "75",
+      "eligibility": "confirmed"
+    }
+  ],
+  "period": "合成一天",
+  "cost_basis": "同状态施法计划；此例无补蓝价格"
+}

@@ -1,0 +1,108 @@
+{
+  "schema": "original-game-reference-v1",
+  "topic": "魔王寨基础技能与新手手动操作",
+  "checked_on": "2026-10-06",
+  "scope": "电脑版普通时间服；当前角色技能/血蓝/任务未观察",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "魔王寨官方门派资料",
+      "publisher": "网易《梦幻西游》电脑版官方网站",
+      "url": "https://xyq.163.com/mp010.html",
+      "resolved_url": "https://xyq.163.com/mp010.html",
+      "http_status": 200,
+      "checked_at_utc": "2026-10-06T18:11:54Z",
+      "displayed_publication_date": "2008-09-03",
+      "response_sha256": "77e4cd0f9400aad00146fbdd309f964887475a0feaab1c315da971f6b5ddc594",
+      "authority": "first_party",
+      "use_limit": "Official introduction retrieved on the recorded date; old displayed publication date. Not a versioned 2026 specification and no exhaustive later-change check is claimed.",
+      "retained_content": "Original factual paraphrase and metadata only; no HTML, JavaScript or copied article bundled."
+    },
+    {
+      "id": "S02",
+      "title": "快捷键官方资料",
+      "publisher": "网易《梦幻西游》电脑版官方网站",
+      "url": "https://xyq.163.com/introduce/newcomer/xs005.html",
+      "resolved_url": "https://xyq.163.com/introduce/newcomer/xs005.html",
+      "http_status": 200,
+      "checked_at_utc": "2026-10-06T18:14:44Z",
+      "displayed_publication_date": "2013-01-03",
+      "response_sha256": "a27410049321f9300eabfa79374dd3f8e588bbbdb89e4fc3c7b13cc62d9696e3",
+      "authority": "first_party",
+      "use_limit": "Official PC keyboard-command page retrieved on the recorded date; no local client was operated or independently observed.",
+      "retained_content": "Original factual paraphrase and metadata only; no HTML, JavaScript or copied article bundled."
+    },
+    {
+      "id": "S03",
+      "title": "战斗规则官方资料",
+      "publisher": "网易《梦幻西游》电脑版官方网站",
+      "url": "https://xyq.163.com/introduce/zd001.html",
+      "resolved_url": "https://xyq.163.com/introduce/zd001.html",
+      "http_status": 200,
+      "checked_at_utc": "2026-10-06T18:11:55Z",
+      "displayed_publication_date": "2013-01-10",
+      "response_sha256": "3726300d178afbd221f3a3fb88f371650d4984544e98f084718186a8bb277b10",
+      "authority": "first_party",
+      "use_limit": "Supports that character and participating summon receive separate round instructions; unrelated historical death costs were not adopted.",
+      "retained_content": "Original factual paraphrase and metadata only; no HTML, JavaScript or copied article bundled."
+    }
+  ],
+  "claims": [
+    {
+      "id": "MW01",
+      "claim": "三昧真火 is a single-target spell associated with 火云术; use requires 火云术 >=20 and its listed MP cost is 30.",
+      "sources": [
+        "S01"
+      ],
+      "adopted": true,
+      "parameters": {
+        "spell": "三昧真火",
+        "required_skill": "火云术",
+        "required_skill_level": 20,
+        "target_count": 1,
+        "listed_mp_cost": 30
+      }
+    },
+    {
+      "id": "MW02",
+      "claim": "飞砂走石 is a multi-target spell associated with 火云术; use requires 火云术 >=30; the introduction lists 30 MP with an increase for multiple targets.",
+      "sources": [
+        "S01"
+      ],
+      "adopted": true,
+      "parameters": {
+        "spell": "飞砂走石",
+        "required_skill": "火云术",
+        "required_skill_level": 30,
+        "target_scope": "multiple",
+        "exact_target_count": null,
+        "listed_base_mp_cost": 30,
+        "multi_target_mp_increases": true,
+        "exact_multi_target_mp_cost": null
+      }
+    },
+    {
+      "id": "MW07",
+      "claim": "In battle Alt+W opens the spell list, Alt+E opens the item inventory, and Alt+D is defend.",
+      "sources": [
+        "S02"
+      ],
+      "adopted": true
+    },
+    {
+      "id": "MW08",
+      "claim": "Player and participating summon have separate commands within a round. A pet action is conditional on an actual participating pet and its ability to act.",
+      "sources": [
+        "S03"
+      ],
+      "type": "source_fact_with_legality_guard",
+      "adopted": true
+    }
+  ],
+  "boundaries": [
+    "核验日是读取日期，不是规则生效日或全量现行性保证",
+    "群体目标数和精确群体MP未实现",
+    "出招顺序为基于可用技能的条件建议，不是官方最优策略",
+    "不从人物41级推断已学技能或当前流派"
+  ]
+}

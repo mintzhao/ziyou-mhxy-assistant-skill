@@ -1,0 +1,68 @@
+{
+  "context": {
+    "server": "合成测试区",
+    "currency": "两",
+    "as_of": "2026-10-06",
+    "max_age_days": 7
+  },
+  "budget": "100",
+  "equipment": {
+    "gemType": "black",
+    "slot": "鞋子",
+    "equipmentLevel": 100,
+    "currentForge": 8,
+    "targetForge": 10,
+    "existingGemTypes": [
+      "black"
+    ],
+    "effects": []
+  },
+  "grade_quotes": {
+    "9": {
+      "amount": "30",
+      "currency": "两",
+      "server": "合成测试区",
+      "observed_on": "2026-10-06",
+      "source": "synthetic regression data, not market price",
+      "kind": "user_quote"
+    },
+    "10": {
+      "amount": "50",
+      "currency": "两",
+      "server": "合成测试区",
+      "observed_on": "2026-10-06",
+      "source": "synthetic regression data, not market price",
+      "kind": "user_quote"
+    }
+  },
+  "owned_stones": {},
+  "fees": [],
+  "replacement": {
+    "purchase": {
+      "amount": "130",
+      "currency": "两",
+      "server": "合成测试区",
+      "observed_on": "2026-10-06",
+      "source": "synthetic regression data, not market price",
+      "kind": "user_quote"
+    },
+    "fees": [],
+    "old_item_resale": {
+      "quote": {
+        "amount": "70",
+        "currency": "两",
+        "server": "合成测试区",
+        "observed_on": "2026-10-06",
+        "source": "synthetic regression data, not market price",
+        "kind": "user_quote"
+      },
+      "fees": [],
+      "status": "conditional"
+    },
+    "eligibility": "confirmed",
+    "equivalence": {
+      "status": "confirmed",
+      "basis": "纯合成：假设两条路线达到相同装备目标"
+    }
+  }
+}

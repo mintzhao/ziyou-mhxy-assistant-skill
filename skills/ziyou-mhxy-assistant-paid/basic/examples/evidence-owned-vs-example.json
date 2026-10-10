@@ -1,0 +1,33 @@
+{
+  "sources": [
+    {
+      "id": "u1",
+      "origin": "user",
+      "text": "我的鞋子现在8段，想升到10段。"
+    }
+  ],
+  "facts": [
+    {
+      "id": "forge",
+      "label": "现有鞋锻数",
+      "scope": "current_item",
+      "status": "confirmed",
+      "value": 8,
+      "evidence": [
+        {
+          "source_id": "u1",
+          "excerpt": "我的鞋子现在8段"
+        }
+      ]
+    }
+  ],
+  "calculation_input": {
+    "currentForge": 8
+  },
+  "bindings": [
+    {
+      "path": "/currentForge",
+      "fact_id": "forge"
+    }
+  ]
+}

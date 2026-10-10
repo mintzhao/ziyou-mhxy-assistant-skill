@@ -1,0 +1,28 @@
+/* Explicit local field handoff. No original full question, storage or network API. */
+(function(root,factory){'use strict';if(typeof module==='object'&&module.exports)module.exports=factory(require('./engine.js'));else root.MHXYIntake=factory(root.MHXYEngine);}(typeof globalThis!=='undefined'?globalThis:this,function(Engine){
+'use strict';
+const FORMAT='mhxy-local-intake',VERSION='1',PREFIX='#mhxy-intake=',MAX_BYTES=8000,MAX_HASH=16000;
+const labels={type:'修炼类型',currentLevel:'当前修炼等级',targetLevel:'目标修炼等级',currentProgressXp:'本级已有经验',confirmedCap:'已确认修炼上限',gemType:'宝石种类',currentForge:'当前锻数',targetForge:'目标锻数',slot:'装备部位',equipmentLevel:'装备原始等级',characterLevel:'人物等级',budget:'本次预算',currency:'货币',reserve:'预留金额'};
+const allowed={training:['type','currentLevel','targetLevel','currentProgressXp','confirmedCap','budget','currency','reserve'],resources:['type','currentLevel','targetLevel','currentProgressXp','confirmedCap'],gem:['gemType','currentForge','targetForge','slot','equipmentLevel','characterLevel','budget','currency'],budget:['budget','currency','reserve']};
+for(let grade=1;grade<=20;grade++){const key='gradeQuote'+grade;allowed.gem.push(key);labels[key]=grade+'级宝石报价（两）';}
+const currencies=['两','人民币元'],types=['attack','spell','defense','anti_spell'],gems=['radiance','sun','moon','black','agate','relic','mystery','jade'];
+function fail(m){throw new Error('本地问题交接：'+m);}
+function bytes(s){let n=0;for(const c of s){const p=c.codePointAt(0);n+=p<128?1:p<2048?2:p<65536?3:4;}return n;}
+function record(o){return o!==null&&typeof o==='object'&&!Array.isArray(o)&&!(Engine&&Engine.isNumeric&&Engine.isNumeric(o));}
+function shape(o,keys){if(!record(o)||Object.keys(o).length!==keys.length||keys.some(k=>!Object.hasOwn(o,k)))fail('字段结构不符');for(const k of Object.keys(o)){const d=Object.getOwnPropertyDescriptor(o,k);if(!keys.includes(k)||!d||!Object.hasOwn(d,'value'))fail('不接受额外字段或动态属性');}}
+function string(v,max){if(typeof v!=='string'||v.length>max||/[\x00-\x08\x0b\x0c\x0e-\x1f]/.test(v))fail('文字类型、长度或控制字符无效');return v;}
+function integerToken(v,max){const s=typeof v==='number'?String(v):Engine&&Engine.isNumeric&&Engine.isNumeric(v)?Engine.stringify(v,0):'';if(!/^(0|[1-9]\d*)$/.test(s)||BigInt(s)>BigInt(max))fail('原文位置必须是有界整数');return Number(s);}
+function amount(v){if(!/^(?:0|[1-9]\d{0,12})(?:\.\d{1,6})?$/.test(v))fail('金额必须为非负普通十进制，最多六位小数');const[a,b='']=v.split('.');if(BigInt(a)*1000000n+BigInt(b.padEnd(6,'0'))>1000000000000000000n)fail('金额超过一万亿');}
+function validValue(key,value,route){string(value,64);if(key==='currency'){if(!currencies.includes(value))fail('不支持该货币，不能隐式换算');return;}if(key==='type'){if(!types.includes(value)&&!(route==='resources'&&value==='hunting'))fail('不支持的普通修炼种类');return;}if(key==='gemType'){if(!gems.includes(value))fail('不支持的宝石种类');return;}if(key==='slot'){if(!['武器','头盔','铠甲','腰带','鞋子','项链'].includes(value))fail('不支持的装备部位');return;}if(['budget','reserve'].includes(key)||/^gradeQuote(?:[1-9]|1[0-9]|20)$/.test(key)){amount(value);return;}const max={currentLevel:25,targetLevel:25,confirmedCap:25,currentProgressXp:9007199254740991n,currentForge:20,targetForge:20,equipmentLevel:160,characterLevel:175}[key];if(max===undefined||!/^(0|[1-9]\d*)$/.test(value)||BigInt(value)>BigInt(max))fail('等级或经验不是范围内完整非负整数');if(key==='equipmentLevel'&&BigInt(value)%10n!==0n)fail('装备等级必须为10的倍数');}
+function validate(payload){
+ shape(payload,['format','version','route','fields']);if(payload.format!==FORMAT||payload.version!==VERSION||typeof payload.route!=='string'||!Object.hasOwn(allowed,payload.route))fail('无法识别的格式、版本或任务');
+ if(!Array.isArray(payload.fields)||payload.fields.length===0||payload.fields.length>32)fail('需要1–32个明确字段');const seen=new Set(),fields=[];
+ for(let i=0;i<payload.fields.length;i++){if(!Object.hasOwn(payload.fields,i))fail('字段数组不能缺项');const item=Object.getOwnPropertyDescriptor(payload.fields,String(i));if(!item||!Object.hasOwn(item,'value'))fail('字段数组不能含动态属性');const f=item.value;shape(f,['key','label','value','source','scope']);if(!allowed[payload.route].includes(f.key)||seen.has(f.key))fail('未知或重复字段');seen.add(f.key);if(f.label!==labels[f.key])fail('字段名称与标识不一致');validValue(f.key,f.value,payload.route);if(!['stated','hypothetical'].includes(f.scope))fail('缺少原话或假设范围');shape(f.source,['start','end','text']);const start=integerToken(f.source.start,4000),end=integerToken(f.source.end,4000),text=string(f.source.text,120);if(!text.trim()||end<=start||end-start!==text.length)fail('原文短语与位置长度不一致');fields.push({key:f.key,label:f.label,value:f.value,source:{start,end,text},scope:f.scope});}
+ const out={format:FORMAT,version:VERSION,route:payload.route,fields};if(bytes(JSON.stringify(out))>MAX_BYTES)fail('交接超过8000字节，请减少字段');return out;
+}
+function create(route,fields){if(!Array.isArray(fields))fail('字段必须为数组');return validate({format:FORMAT,version:VERSION,route,fields:fields.map(f=>{shape(f,['key','value','source','scope']);return{key:f.key,label:labels[f.key],value:f.value,source:f.source,scope:f.scope};})});}
+function toHash(payload){const encoded=PREFIX+encodeURIComponent(JSON.stringify(validate(payload)));if(encoded.length>MAX_HASH)fail('本地链接超过16000字符，请减少字段或直接填写表单');return encoded;}
+function fromHash(hash){if(typeof hash!=='string'||!hash.startsWith(PREFIX))return null;if(hash.length>MAX_HASH)fail('本地链接超过16000字符，未应用');let raw;try{raw=decodeURIComponent(hash.slice(PREFIX.length));}catch(_){fail('本地链接编码损坏，未应用');}if(!Engine)fail('精确解析模块未载入');return validate(Engine.parse(raw,MAX_BYTES));}
+function toURL(payload){const p=validate(payload);return (p.route==='resources'?'equipment.html':'planning.html')+toHash(p);}
+return{FORMAT,VERSION,PREFIX,MAX_BYTES,MAX_HASH,labels,allowed,currencies,create,validate,toHash,fromHash,toURL};
+}));

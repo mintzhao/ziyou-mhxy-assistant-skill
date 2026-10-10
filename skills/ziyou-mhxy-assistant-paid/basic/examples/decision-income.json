@@ -1,0 +1,21 @@
+{
+  "currency": "CNY",
+  "initial_outlay": "10000",
+  "monthly_revenue": "1000",
+  "monthly_costs": [
+    {
+      "label": "合成点卡/维修等",
+      "amount": "200"
+    }
+  ],
+  "monthly_hours": "80",
+  "basis": "全部为纯合成算术演示，不代表梦幻实际投入或收入",
+  "target_monthly_net": "500",
+  "resale_scenarios": [
+    {
+      "label": "纯假设一年后",
+      "net_resale": "6000",
+      "after_months": "12"
+    }
+  ]
+}

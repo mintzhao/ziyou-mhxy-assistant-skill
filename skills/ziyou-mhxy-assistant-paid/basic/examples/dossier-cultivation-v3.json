@@ -1,0 +1,337 @@
+{
+  "context": {
+    "as_of": "2026-10-06",
+    "currency": "两",
+    "max_age_days": 7,
+    "ruleset": "pc_time",
+    "server": "档案合成区"
+  },
+  "facts": [
+    {
+      "assumption": "纯原创合成测试，不是用户账号事实或真实区价",
+      "evidence": [
+        {
+          "excerpt": "以下数值只是原创合成回归样例。",
+          "source_id": "synthetic"
+        }
+      ],
+      "id": "forge",
+      "label": "当前锻数",
+      "scope": "scenario",
+      "status": "conditional",
+      "unit": "锻",
+      "value": 8
+    },
+    {
+      "assumption": "纯原创合成测试，不是用户账号事实或真实区价",
+      "evidence": [
+        {
+          "excerpt": "以下数值只是原创合成回归样例。",
+          "source_id": "synthetic"
+        }
+      ],
+      "id": "stock9",
+      "label": "库存9级黑宝石",
+      "scope": "scenario",
+      "status": "conditional",
+      "unit": "颗",
+      "value": 1
+    },
+    {
+      "assumption": "纯原创合成测试，不是用户账号事实或真实区价",
+      "evidence": [
+        {
+          "excerpt": "以下数值只是原创合成回归样例。",
+          "source_id": "synthetic"
+        }
+      ],
+      "id": "quote10",
+      "label": "10级采购报价",
+      "scope": "scenario",
+      "status": "conditional",
+      "unit": "两",
+      "value": "64"
+    },
+    {
+      "assumption": "纯原创合成测试，不是用户账号事实或真实区价",
+      "evidence": [
+        {
+          "excerpt": "以下数值只是原创合成回归样例。",
+          "source_id": "synthetic"
+        }
+      ],
+      "id": "quote9",
+      "label": "9级采购报价",
+      "scope": "scenario",
+      "status": "conditional",
+      "unit": "两",
+      "value": "31"
+    },
+    {
+      "assumption": "纯原创合成测试，不是用户账号事实或真实区价",
+      "evidence": [
+        {
+          "excerpt": "以下数值只是原创合成回归样例。",
+          "source_id": "synthetic"
+        }
+      ],
+      "id": "stock_value",
+      "label": "stock_value",
+      "scope": "scenario",
+      "status": "conditional",
+      "unit": "两",
+      "value": "27"
+    },
+    {
+      "assumption": "纯原创合成测试，不是用户账号事实或真实区价",
+      "evidence": [
+        {
+          "excerpt": "当前现金270000两",
+          "source_id": "done_v3"
+        }
+      ],
+      "id": "cash",
+      "label": "cash",
+      "scope": "scenario",
+      "status": "conditional",
+      "unit": "两",
+      "value": "270000"
+    },
+    {
+      "assumption": "纯原创合成测试，不是用户账号事实或真实区价",
+      "evidence": [
+        {
+          "excerpt": "攻击修炼已到1级",
+          "source_id": "done_v3"
+        }
+      ],
+      "id": "cultivation_level",
+      "label": "当前攻击修炼等级",
+      "scope": "scenario",
+      "status": "conditional",
+      "unit": "级",
+      "value": 1
+    },
+    {
+      "assumption": "纯原创合成测试，不是用户账号事实或真实区价",
+      "evidence": [
+        {
+          "excerpt": "当前本级0XP",
+          "source_id": "done_v3"
+        }
+      ],
+      "id": "cultivation_xp",
+      "label": "本级已有经验",
+      "scope": "scenario",
+      "status": "conditional",
+      "unit": "XP",
+      "value": 0
+    },
+    {
+      "assumption": "纯原创合成测试，不是用户账号事实或真实区价",
+      "evidence": [
+        {
+          "excerpt": "当前同帮派资材45",
+          "source_id": "done_v3"
+        }
+      ],
+      "id": "guild_materials",
+      "label": "同一帮派可用资材",
+      "scope": "scenario",
+      "status": "conditional",
+      "unit": "资材",
+      "value": "45"
+    }
+  ],
+  "id": "synthetic_shared_cultivation",
+  "parent_sha256": "4e19fcb50585ef6f048980df350916f2414713cc9aa92bfca0230516dc7b61f8",
+  "revision": 3,
+  "schema": "mhxy-dossier/v1",
+  "snapshot": {
+    "already_met": [
+      "attack1"
+    ],
+    "available_resources": {
+      "black9": {
+        "$fact": "stock9"
+      },
+      "guild_materials": {
+        "$fact": "guild_materials"
+      }
+    },
+    "budget": {
+      "$fact": "cash"
+    },
+    "cultivation": {
+      "confirmedCap": 20,
+      "currentLevel": {
+        "$fact": "cultivation_level"
+      },
+      "currentProgressXp": {
+        "$fact": "cultivation_xp"
+      },
+      "targetLevel": 1,
+      "type": "attack"
+    },
+    "gem": {
+      "equipment": {
+        "currentForge": {
+          "$fact": "forge",
+          "unit": "锻"
+        },
+        "effects": [],
+        "equipmentLevel": 100,
+        "existingGemTypes": [
+          "black"
+        ],
+        "gemType": "black",
+        "slot": "鞋子",
+        "targetForge": 10
+      },
+      "fees": [],
+      "grade_quotes": {
+        "10": {
+          "amount": {
+            "$fact": "quote10"
+          },
+          "currency": "两",
+          "kind": "user_quote",
+          "observed_on": "2026-10-06",
+          "server": "档案合成区",
+          "source": "原创合成报价，非真实区价"
+        },
+        "9": {
+          "amount": {
+            "$fact": "quote9"
+          },
+          "currency": "两",
+          "kind": "user_quote",
+          "observed_on": "2026-10-06",
+          "server": "档案合成区",
+          "source": "原创合成报价，非真实区价"
+        }
+      },
+      "owned_stones": {
+        "9": {
+          "opportunity_quote": {
+            "amount": {
+              "$fact": "stock_value"
+            },
+            "currency": "两",
+            "kind": "user_quote",
+            "observed_on": "2026-10-06",
+            "server": "档案合成区",
+            "source": "原创合成报价，非真实区价"
+          },
+          "quantity": {
+            "$fact": "stock9"
+          }
+        }
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "synthetic",
+      "origin": "demonstration",
+      "text": "以下数值只是原创合成回归样例。攻击修炼0级、本级0XP、目标1级；同帮派可用资材100；现金600000两；鞋子8到10段使用1颗库存9级黑宝石，另买10级石64两。"
+    },
+    {
+      "id": "progress_v2",
+      "origin": "demonstration",
+      "text": "第二轮合成更正本级已有40XP。这是已有状态的更正，不推断这轮实际购买、扣款或消耗资材。"
+    },
+    {
+      "id": "done_v3",
+      "origin": "demonstration",
+      "text": "第三轮合成用户已确认：攻击修炼已到1级，当前本级0XP；当前同帮派资材45，当前现金270000两。鞋子尚未升级，宝石库存不变。"
+    }
+  ],
+  "steps": [
+    {
+      "id": "whole",
+      "input": {
+        "already_met": {
+          "$ref": "snapshot:/already_met"
+        },
+        "available_resources": {
+          "$ref": "snapshot:/available_resources"
+        },
+        "budget": {
+          "$ref": "snapshot:/budget",
+          "unit": "两"
+        },
+        "goals": [
+          {
+            "basis": "合成目标，非战斗阈值",
+            "id": "boots10",
+            "target": "指定鞋10段"
+          },
+          {
+            "basis": "合成用户指定等级目标",
+            "id": "attack1",
+            "target": "攻击修炼1级"
+          }
+        ],
+        "options": [
+          {
+            "$ref": "step:gem:/option"
+          },
+          {
+            "$ref": "step:cultivation:/option"
+          }
+        ],
+        "reserve": "100000",
+        "title": "合成鞋子目标总预算"
+      },
+      "kind": "portfolio"
+    },
+    {
+      "id": "gem",
+      "input": {
+        "calculation": {
+          "$ref": "snapshot:/gem"
+        },
+        "project": {
+          "conflicts": [],
+          "effect_basis": "仅代表合成的同一物品锻数目标",
+          "eligibility": "confirmed",
+          "goals": [
+            "boots10"
+          ],
+          "id": "upgrade",
+          "label": "把指定鞋从现段升到10段",
+          "requires": [],
+          "system": "equipment"
+        },
+        "stock_resources": {
+          "9": "black9"
+        }
+      },
+      "kind": "project.gem_upgrade"
+    },
+    {
+      "id": "cultivation",
+      "input": {
+        "calculation": {
+          "$ref": "snapshot:/cultivation"
+        },
+        "material_resource": "guild_materials",
+        "project": {
+          "conflicts": [],
+          "effect_basis": "合成情景假定用户已核实普通修炼资格，未推断战斗达标",
+          "eligibility": "confirmed",
+          "goals": [
+            "attack1"
+          ],
+          "id": "ordinary_training",
+          "label": "普通攻击修炼到1级",
+          "requires": [],
+          "system": "training"
+        }
+      },
+      "kind": "project.cultivation"
+    }
+  ],
+  "title": "原创合成：宝石与普通修炼共同重算"
+}
