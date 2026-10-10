@@ -3,16 +3,16 @@
 本仓库是自游·梦幻助手的独立 Skill 客户端，支持能读取 Agent Skills 并执行 Python 的聊天助手。
 客户端和内嵌免费工具采用 [MIT 许可证](LICENSE)。高级分析调用作者运营的收费服务；付费算法、服务端实现、验付、订单账本和支付执行工具不包含在本仓库中。
 
-客户端版本为 `0.9.0-client.2`，以付费运行包 `0.8.7` 为基础。34 个既有执行文件保持原字节；本版在已测试的 `0.9.0-client.1` 上更新发布说明、版本和实测记录，执行代码不变。免费功能继续免费，高级服务仍先确认摘要和费用，再通过支付宝官方工具付款。
+客户端版本为 `0.9.0-client.3`，以付费运行包 `0.8.7` 为基础。34 个既有执行文件保持原字节；本版在已测试的 `0.9.0-client.1` 上更新发布说明、版本和实测记录，执行代码不变。免费功能继续免费，高级服务仍先确认摘要和费用，再通过支付宝官方工具付款。
 
 ## 安装和使用
 
 安装完整的 [skills/ziyou-mhxy-assistant-paid](skills/ziyou-mhxy-assistant-paid/SKILL.md) 目录到当前宿主的 Skill 目录；不要只复制 SKILL.md，也不要单独注册 basic 子目录。平台说明见 [跨 agent 接入](docs/COMPATIBILITY.md)。
 
-可从 [GitHub Releases](https://github.com/mintzhao/ziyou-mhxy-assistant-skill-client/releases/latest) 下载 Skill ZIP，或克隆本仓库后复制完整技能目录：
+可从 [GitHub Releases](https://github.com/mintzhao/ziyou-mhxy-assistant-skill/releases/latest) 下载 Skill ZIP，或克隆本仓库后复制完整技能目录：
 
 ```powershell
-git clone https://github.com/mintzhao/ziyou-mhxy-assistant-skill-client.git
+git clone https://github.com/mintzhao/ziyou-mhxy-assistant-skill.git
 ```
 
 Codex 用户技能目录在已验证的 Windows 环境中为 `$HOME/.codex/skills`；Claude Code 可使用 `$HOME/.claude/skills` 或项目 `.claude/skills`；WorkBuddy 使用 Skill 导入功能。安装前检查同名技能，避免覆盖旧版资料；以当前宿主配置为准。

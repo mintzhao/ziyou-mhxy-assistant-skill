@@ -27,7 +27,7 @@
 
 Claude Code 来源：[官方 Skills 文档](https://code.claude.com/docs/en/skills)。Codex 路径来自本地 Skill Creator 指引；使用不同版本时以当前宿主配置为准。标准支持范围参考 [Agent Skills](https://agentskills.io/home)，本表不构成所有平台已可付款的承诺。
 
-0.9.0-client.2 更新版本、发布说明和上述实测记录，34 个执行文件与已测试版本逐字节一致。Codex 高级准备测试使用合成附件，缺预算时保持未知且返回澄清，三个服务均展示完整价格、事实和 UTC+08 有效期，charge_created=false；没有测试真实行情、截图识别或实际付款。
+0.9.0-client.3 更新版本、发布说明和上述实测记录，34 个执行文件与已测试版本逐字节一致。Codex 高级准备测试使用合成附件，缺预算时保持未知且返回澄清，三个服务均展示完整价格、事实和 UTC+08 有效期，charge_created=false；没有测试真实行情、截图识别或实际付款。
 
 ## 运行约定
 
