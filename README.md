@@ -9,10 +9,10 @@
 
 安装完整的 [skills/ziyou-mhxy-assistant-paid](skills/ziyou-mhxy-assistant-paid/SKILL.md) 目录到当前宿主的 Skill 目录；不要只复制 SKILL.md，也不要单独注册 basic 子目录。平台说明见 [跨 agent 接入](docs/COMPATIBILITY.md)。
 
-可从 [GitHub Releases](https://github.com/mintzhao/ziyou-mhxy-assistant-client/releases/latest) 下载 Skill ZIP，或克隆本仓库后复制完整技能目录：
+可从 [GitHub Releases](https://github.com/mintzhao/ziyou-mhxy-assistant-skill-client/releases/latest) 下载 Skill ZIP，或克隆本仓库后复制完整技能目录：
 
 ```powershell
-git clone https://github.com/mintzhao/ziyou-mhxy-assistant-client.git
+git clone https://github.com/mintzhao/ziyou-mhxy-assistant-skill-client.git
 ```
 
 Codex 用户技能目录在已验证的 Windows 环境中为 `$HOME/.codex/skills`；Claude Code 可使用 `$HOME/.claude/skills` 或项目 `.claude/skills`；WorkBuddy 使用 Skill 导入功能。安装前检查同名技能，避免覆盖旧版资料；以当前宿主配置为准。
