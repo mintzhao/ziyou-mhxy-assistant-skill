@@ -64,7 +64,7 @@
 
 ## API
 
-Python：`scripts/resources.py` 中的 `cultivation(dict)`、`gems(dict)`。浏览器：`window.MHXYResources.cultivation(input)`、`.gems(input)`。不存在第三方依赖；浏览器运行本身不需要Node或Python。
+Python：`scripts/resources.py` 中的 `cultivation(dict)`、`gems(dict)`。只依赖 Python 标准库。
 
 数值输入接受非负整数、十进制整数字符串；报价单位是游戏币“两”，不接受小数、负数、null或布尔值。字符串最多30位。两端的数值类型必须是JS安全整数范围内的整数，大数应传字符串。计算使用Python整数和JS BigInt；所有数值结果使用字符串，缺失报价使用null。
 
@@ -86,7 +86,7 @@ type可选attack、spell、defense、anti_spell、hunting。返回requiredXp、p
 
 返回quoteTotalLiang、knownQuoteSubtotalLiang、missingQuoteGrades、baseUnitsLowerBound、targetStoneBaseUnitsLowerBound、rawStatDelta、allowedSlots、逐级steps、explanations和citations。rawStatDelta含key、label、value、unit，不直接写回角色配装面板。
 
-浏览器另外提供gemTypes与cultivationTypes元数据。来源URL固定为官方页面，不接收用户传入的链接。
+来源URL固定为官方页面，不接收用户传入的链接。
 
 ## 命令行运行
 

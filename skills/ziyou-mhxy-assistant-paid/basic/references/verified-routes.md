@@ -39,7 +39,7 @@ from scripts.routes import (
 | gem_eligibility | gem_feasibility | 普通宝石部位、两种类型、逐级、装备上限、精致/无级别例外 |
 | star_gem | star_gems | 指定等级、指定颗数的星辉石成品材料下限，含2024高等级额外配方 |
 
-这是独立于原 `resources.py` 的扩展，不改变旧普通修炼/宝石算术。浏览器旧预览不调用这些新增函数；不要把Python新增能力当成已经有浏览器交互页。
+这是独立于原 `resources.py` 的扩展，不改变旧普通修炼/宝石算术。由宿主调用Python接口并解释结果。
 
 ### 人工报价格式
 

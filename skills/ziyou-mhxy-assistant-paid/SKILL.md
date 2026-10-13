@@ -4,7 +4,7 @@ description: 用于梦幻西游电脑版时间服的规则问答、材料花费�
 license: MIT
 metadata:
   author: 自游
-  version: "0.9.0"
+  version: "0.9.1"
   display-name: 自游·梦幻助手
   runtime: Python 3.10+ standard library; HTTPS for remote services
 ---

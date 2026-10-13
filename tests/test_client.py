@@ -56,7 +56,7 @@ def response(status=200, headers=(), data=None):
 class ClientTests(unittest.TestCase):
     def test_manifest_and_private_boundary(self):
         result = verify()
-        self.assertEqual(result['preserved_runtime_files'], 34)
+        self.assertEqual(result['preserved_runtime_files'], 16)
         self.assertEqual(result['discoverable_skills'], 1)
 
     def test_free_calculation_from_unrelated_directory_isolated_python(self):

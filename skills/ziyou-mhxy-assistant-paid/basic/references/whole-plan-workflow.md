@@ -120,4 +120,4 @@ portfolio还会给target_plans_before_money_constraints：在已列且资料齐�
 
 ## 图形入口与关联边界
 
-preview/planning.html已经提供完整宝石、混合修炼与共享预算的中文表单，三套输入一次保存，未知值和来源一起保留。它们不互相自动复制成本：共同预算中的整项目报价/效果依据须自己更新。需要一处新事实自动更新多个步骤时，宿主使用单一dossier，并可登记equipment.optimize。完整功能矩阵见feature-matrix.md。
+需要一处新事实自动更新多个步骤时，宿主使用单一dossier，并可登记equipment.optimize。共同预算中的整项目报价与效果依据须按实际条件更新。完整功能矩阵见feature-matrix.md。

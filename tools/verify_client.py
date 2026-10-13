@@ -42,6 +42,8 @@ def verify(root=ROOT):
         raise ValueError('Unlisted or missing files: ' + ', '.join(sorted(actual ^ expected)))
     for name, expected_hash in members.items():
         relative = safe_member(name)
+        if 'preview' in relative.parts or relative.suffix.lower() in {'.html', '.css', '.js'}:
+            raise ValueError('Browser UI is not part of this Skill: ' + name)
         if any(part in PRIVATE for part in relative.parts):
             raise ValueError('Private tree rejected: ' + name)
         path = root.joinpath(*relative.parts)
